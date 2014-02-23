@@ -1,0 +1,6 @@
+packages
+.project
+pubspec.lock
+*~
+.settings
+build

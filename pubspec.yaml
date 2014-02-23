@@ -1,0 +1,9 @@
+name:  gitwho
+description:  A simple aplication that queries github public api
+
+dependencies:
+  start: 0.2.0
+  angular: 0.9.8
+  browser: any
+dev_dependencies:
+  unittest: any

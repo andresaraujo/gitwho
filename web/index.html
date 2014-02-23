@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>index</title>
+<link
+  href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
+  rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="application/dart" src="index.dart"></script>
+<script src="packages/browser/dart.js"></script>
+</head>
+
+<body>
+<main search-ctrl>
+  <header class="sw-header">
+    <div class="sw-header__inner">
+      <h1 class="sw-logo">
+        Git<span class="sw-logo__alt">Who</span>
+      </h1>
+      <span class="sw-search-box__caption">Find Github users by location.</span>
+      <div class="sw-search-box">
+        <form class="form-inline">
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="Location" ng-model="ctrl.location" />
+            <a class="btn btn-info" href="" ng-click="ctrl.loadUsers()">Search!</a>        
+          </div>
+        </form>
+      </div>
+    </div>
+  </header>
+  
+  <section>
+    <div>
+      <ul class="content">
+        <li class="list-item" ng-repeat="u in ctrl.users">
+          <div>
+            <img class="github-user-avatar img-circle"
+            ng-src="{{u.avatarUrl}}">
+          </div>
+          <div class="github-user">
+            <div class="">
+              <a ng-href="{{u.htmlUrl}}">
+                <span>{{u.name}}</span>
+                <span class="github-user-login">@{{u.login}}</span>
+              </a>
+            </div>
+            <div>
+              <span class="github-user-login">{{u.location}}</span>
+            </div> 
+          </div>
+          <br>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+  
+</body>
+</html>

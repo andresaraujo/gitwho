@@ -1,0 +1,83 @@
+.github-user-avatar{
+  width:            48px;
+  height:           48px;
+  margin-top:       8px;
+  margin-right:     15px;
+  position:         relative;
+  float:            left;
+}
+.github-user a{
+  float:            left;
+  width:            414px;
+  position:         relative;
+  color:            #6b666f;
+  font:             24px / 1 'LatoBold','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.github-user a:hover{
+  color:            #e67d69;
+}
+
+.github-user-login{
+  font-size:        16px
+}
+
+.content {
+  margin:           30px auto;
+  width:            547px;
+}
+
+.list-item{
+  border-top:       1px solid #e1e3ef;
+  padding:          15px;
+  height:           90px;
+  font:             14px / 20px 'LatoRegular','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+/*------------------------------------*\
+  Header
+\*------------------------------------*/
+.sw-header {
+  position:         relative;
+  background-color: #FCFBF6;
+  padding:          0.142857em 0.142857em 0.357143em 0.142857em;
+}
+
+.sw-header__inner {
+  max-width:        700px;
+  margin:           0 auto;
+}
+
+/*------------------------------------*\
+  Logo
+\*------------------------------------*/
+.sw-logo {
+  color:            #6E6473;
+  margin:           0.346154em 0;
+  font-size:        6.5em;
+  text-shadow:      0 1px 0 rgba(255, 255, 255, 0.4), 0 2px 0 rgba(255, 255, 255, 0.6);
+}
+
+.sw-logo__alt {
+  color:            #E67D69;
+}
+
+/*------------------------------------*\
+  General
+\*------------------------------------*/
+body {
+  font:             normal 87.5%/1.214286 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:            #444444;
+  background-color: #FFFFFF;
+  overflow-y:       scroll;
+  text-align:       center;
+}
+ol, ul {
+  margin:           0;
+  list-style-type:  none;
+}
+a {
+  text-decoration:  none      !important;
+  cursor:           pointer;
+  outline:          none;
+}

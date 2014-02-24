@@ -1,8 +1,8 @@
 library app_ctrl;
 
 import 'package:angular/angular.dart';
-import 'package:start_example/services/github_service.dart';
-import 'package:start_example/models/models.dart';
+import 'package:gitwho/services/github_service.dart';
+import 'package:gitwho/models/models.dart';
 
 @NgController(selector: '[app-ctrl]', publishAs: 'ctrl')
 class AppCtrl{

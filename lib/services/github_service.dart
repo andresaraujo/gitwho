@@ -1,8 +1,7 @@
 import 'dart:async';
-import "dart:convert";
 
 import 'package:angular/angular.dart';
-import "package:start_example/models/models.dart";
+import "package:gitwho/models/models.dart";
 
 class GithubService{
   Http _http;
@@ -12,7 +11,7 @@ class GithubService{
     return _http.get("https://api.github.com/users/${githubUser}/repos?per_page=100")
         .then((HttpResponse response) {
           print(response.data[0]);
-          List result = response.data;//JSON.decode(JSON.decode(response.toString()));
+          List result = response.data;
           List<Repo> repos = [];
           for(var r in result){
             repos.add(new Repo.fromJson(r));
@@ -25,7 +24,7 @@ class GithubService{
     return _http.get("https://api.github.com/search/users?q=location:${location}+type:Users")
         .then((HttpResponse response) {
           print(response.data);
-          List result = response.data['items'];//JSON.decode(JSON.decode(response.toString()));
+          List result = response.data['items'];
           List<User> users = [];
           for(var r in result){
             users.add(new User.fromJson(r));

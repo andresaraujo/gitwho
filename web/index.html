@@ -13,13 +13,13 @@
 
 <body>
 <main search-ctrl>
-  <header class="sw-header">
-    <div class="sw-header__inner">
-      <h1 class="sw-logo">
-        Git<span class="sw-logo__alt">Who</span>
+  <header class="app-header">
+    <div class="app-header_inner">
+      <h1 class="app-logo">
+        Git<span class="app-logo_alt">Who</span>
       </h1>
-      <span class="sw-search-box__caption">Find Github users by location.</span>
-      <div class="sw-search-box">
+      <span>Find Github users by location.</span>
+      <div>
         <form class="form-inline">
           <div class="form-group">
             <input class="form-control" type="text" placeholder="Location" ng-model="ctrl.location" />
@@ -40,7 +40,7 @@
           </div>
           <div class="github-user">
             <div class="">
-              <a ng-href="{{u.htmlUrl}}">
+              <a target="_blank" ng-href="{{u.htmlUrl}}">
                 <span>{{u.name}}</span>
                 <span class="github-user-login">@{{u.login}}</span>
               </a>

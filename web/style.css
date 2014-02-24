@@ -34,37 +34,27 @@
   font:             14px / 20px 'LatoRegular','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
-/*------------------------------------*\
-  Header
-\*------------------------------------*/
-.sw-header {
+.app-header {
   position:         relative;
   background-color: #FCFBF6;
   padding:          0.142857em 0.142857em 0.357143em 0.142857em;
 }
 
-.sw-header__inner {
+.app-header_inner {
   max-width:        700px;
   margin:           0 auto;
 }
-
-/*------------------------------------*\
-  Logo
-\*------------------------------------*/
-.sw-logo {
+.app-logo {
   color:            #6E6473;
   margin:           0.346154em 0;
   font-size:        6.5em;
   text-shadow:      0 1px 0 rgba(255, 255, 255, 0.4), 0 2px 0 rgba(255, 255, 255, 0.6);
 }
 
-.sw-logo__alt {
+.app-logo_alt {
   color:            #E67D69;
 }
 
-/*------------------------------------*\
-  General
-\*------------------------------------*/
 body {
   font:             normal 87.5%/1.214286 "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:            #444444;

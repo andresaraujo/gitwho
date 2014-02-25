@@ -10,10 +10,12 @@ class AppCtrl{
   GithubService gs;
   String        githubUser = "andresaraujo";
   List<Repo>    repos = [];
+  
   AppCtrl(this.gs);
   
   loadRepos(){
-    gs.getReposByUser(githubUser).then((List<Repo> repos) => this.repos = repos);
+    gs.getReposByUser(githubUser)
+      .then((repos) => this.repos = repos);
   }
 }
 
@@ -28,12 +30,8 @@ class SearchCtrl{
   
   loadUsers(){
     gs.getUsersByLocation(location)
-      .then((List<User> users) {
-        this.users = users;
-        for(var u in users){
-          gs.addUserData(u);   
-        }
-        });
+      .then((users) => this.users = users)
+      .then((_) => this.users.forEach((u) => gs.addUserData(u)));
   }
 }
 

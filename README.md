@@ -2,7 +2,7 @@ Gitwho, dart full stack app
 ======
 
 
-A simple angular.dart application that uses github public api. No fancy stuff here just exploring fullstack dart development.
+A simple Angular.dart application that uses github public API. No fancy stuff here just exploring full stack dart development.
 
 To install:
 
@@ -16,3 +16,8 @@ To do:
 
 - Create RESTful services
 - Implement routes, directives
+
+Live:
+
+[http://gitwho.herokuapp.com/](http://gitwho.herokuapp.com/)
+
